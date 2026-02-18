@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AmarClub official domain verification center. Join Asia's most trusted gaming platform since 2020. Verify authentic domains, secure gaming, instant withdrawals, 24/7 support.">
+    <meta name="keywords" content="AmarClub, domain verification, official gaming platform, trusted gaming, secure platform, Asia gaming, online gaming community, instant withdrawals, 24/7 support">
+    <title>AmarClub Official - Trusted Gaming Platform | Domain Verification</title>
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/logo.webp" type="image/webp">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#F42A41">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AmarClub">
+    <link rel="apple-touch-icon" href="images/icon-180.webp">
+    <meta name="msapplication-TileColor" content="#F42A41">
+    <meta name="msapplication-TileImage" content="images/logo.webp">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="error-message hidden"></div>
+
+      <header class="card">
+        <div class="logo" role="img" aria-label="AmarClub Logo"></div>
+      </header>
+
+      <section class="card">
+        <div class="search" role="search">
+          <input 
+            type="text" 
+            class="search__input" 
+            placeholder="Enter a domain to verify" 
+            aria-label="Domain input field"
+            autocomplete="off"
+          >
+          <button class="btn btn--search" type="button" aria-label="Verify domain">
+            <img src="images/search.webp" alt="" class="btn__icon">
+            <span>Check</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h1 class="title">
+          <img src="images/badge.webp" alt="" class="title__icon">
+          AmarClub: The Trusted Platform
+        </h1>
+        <p class="subtitle">Trusted by Millions | Since 2020</p>
+        <div class="pwa-install">
+          <button id="install-btn" class="btn btn--install hidden" type="button">
+            <span class="install-icon">📱</span>
+            <span class="install-text">Add to Home Screen</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="list">
+          <h2 class="list__title">🔒 Verified Official Domains</h2>
+          <div id="domain-list" role="list">  
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="heading">🎯 Why Choose AmarClub as Your Gaming Partner?</h2>
+        <p class="text">
+          <span class="text--highlight">Industry-Leading Commission Rates Up to 1%</span>
+        </p>
+        <p class="text">
+          Join thousands of successful partners who have made AmarClub their platform of choice. Enjoy exclusive benefits, expert support, and the highest commission rates in the industry.
+        </p>
+        <h2 class="heading">🛡️ Security & Reliability You Can Trust</h2>
+        <p class="text">
+          With advanced security infrastructure and a proven track record, AmarClub guarantees a gaming experience that is both enjoyable and completely secure. Our platform serves millions of satisfied users across Asia with a 99.9% uptime guarantee.
+        </p>
+        <h2 class="heading">🔐 Bank-Level Data Protection</h2>
+        <p class="text">
+          Your privacy is our top priority. We use military-grade encryption and adhere to international security standards to protect your personal and financial information. Our dedicated security team operates 24/7 to keep your data safe and confidential.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2 class="heading">💎 Premium User Experience</h2>
+        <p class="text">
+          Enjoy gaming like never before with our intuitive interface, designed by UI/UX experts. Every feature is crafted for seamless navigation and effortless access to all platform functions.
+        </p>
+        <h2 class="heading">🌟 Award-Winning Customer Support</h2>
+        <p class="text">
+          Our multilingual support team is available 24/7. With an average response time of under 30 seconds and a 98% satisfaction rate, we guarantee your questions are answered quickly and professionally.
+        </p>
+        <h2 class="heading">🚀 Start Your Journey in 3 Simple Steps</h2>
+        <p class="text">
+          Becoming a AmarClub partner is easier than ever. Whether you're new to gaming or a seasoned player, our streamlined process lets you start earning in just minutes.
+        </p>
+        <h2 class="heading">📋 Quick Registration Guide</h2>
+        <ol class="steps">
+          <li class="step">
+            <div class="step__number">1</div>
+            <div class="step__content">Visit our official website <a id="official-link" href="#" class="link" target="_blank" rel="noopener"></a> and click "Partner Program"</div>
+          </li>
+          <li class="step">
+            <div class="step__number">2</div>
+            <div class="step__content">Generate your unique invitation link in your dashboard</div>
+          </li>
+          <li class="step">
+            <div class="step__number">3</div>
+            <div class="step__content">Share your link with friends and start earning instant commissions—no hidden fees, no minimum withdrawal.</div>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <img src="images/service.webp" alt="Customer Service" class="float float--service" role="button" tabindex="0">
+    <img src="images/telegram.webp" alt="Telegram" class="float float--telegram" role="button" tabindex="0">
+
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__content">
+        <img src="images/close.webp" alt="Close" class="modal__close" role="button" tabindex="0">
+        <img src="images/logo.webp" alt="AmarClub" class="modal__logo">
+        <p id="modal-title" class="modal__text"></p>
+        <div id="modal-url" class="modal__url"></div>
+        <p id="modal-desc" class="modal__text"></p>
+      </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+  <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "98c985a875dd4722841fd3e64ccab99d"}'></script><!-- Cloudflare Pages Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"661b2831334b4007ac23f4781f181320","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+  </html>
